@@ -12,9 +12,13 @@
 9) git add <FileName.type>: adds the file to staging area, and begins tracking changes (will now show green in 'git status')
 	9*) git add . : the '.' will add all the files in the working directory folder to the staging area (use 'git 
 	status' again to check if the files got added to staging area (i.e. turned green))
-10) git commit -m "<description>": creates a save point with <description> message ('-m') (explain the changes made since last save point)
+10) git commit -m "<description>": creates a save point with <description> message ('-m') (explain the changes made since last save point, by convention use present tense)
 
 11) git log: shows what Commits have been made (commit hash, author, and date shown for each Commit save point)
+
+12) git diff <FileName.type>: Will show the changes between the current status of <FileName.type>, and the last Commit (use this to track changes, and copy-paste things you might need)
+
+13) git checkout <FileName.type>: Restores <FileName.type> back to the last version that was committed. 
 
 
 
