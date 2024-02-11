@@ -8,8 +8,13 @@
 
 6) git init: initializes empty git repository inside the <FolderName> directory
 7) ls -a: will show hidden files in the folder, where git versions will be saved
-8) git status: Shows the files in directory not yet in staging area (these are dynamic untracked files being worked on, shown in red)
-9) git add <FileName.type>: adds the file to staging area, and begins tracking changes
+8) git status: Shows the files in working directory, and not yet in staging area (these are dynamic untracked files being worked on, shown in red)
+9) git add <FileName.type>: adds the file to staging area, and begins tracking changes (will now show green in 'git status')
+	9*) git add . : the '.' will add all the files in the working directory folder to the staging area (use 'git 
+	status' again to check if the files got added to staging area (i.e. turned green))
+10) git commit -m "<description>": creates a save point with <description> message ('-m') (explain the changes made since last save point)
+
+11) git log: shows what Commits have been made (commit hash, author, and date shown for each Commit save point)
 
 
 
