@@ -1,0 +1,15 @@
+1) cd <FolderName>: 'Create Directory' navigates to <FolderName> (this is the working directory)
+2) mkdir <name>: 'make directory' creates a folder in cd, named <name>
+3) ls: shows contents of the folder you are in (e.g. cd <FolderName>)
+4) touch <FileName.type>: Creates a file in the cd (e.g. chapter1.txt)
+5) open <FileName.type>: navigates into the desired folder (will open in default app -> 'vim' in console will open a console based text editor instead of default app)
+
+*make edits in app, and then save*
+
+6) git init: initializes empty git repository inside the <FolderName> directory
+7) ls -a: will show hidden files in the folder, where git versions will be saved
+8) git status: Shows the files in directory not yet in staging area (these are dynamic untracked files being worked on, shown in red)
+9) git add <FileName.type>: adds the file to staging area, and begins tracking changes
+
+
+
