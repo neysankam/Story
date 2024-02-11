@@ -1,6 +1,7 @@
 *Local Git*
 
-1) cd <FolderName>: 'Create Directory' navigates to <FolderName> (this is the working directory)
+0) cd ~: go to root
+1) cd <FolderNamePath>: 'Create Directory' navigates to <FolderName> (this is the working directory e.g. Desktop)
 2) mkdir <name>: 'make directory' creates a folder in cd, named <name>
 3) ls: shows contents of the folder you are in (e.g. cd <FolderName>)
 4) touch <FileName.type>: Creates a file in the cd (e.g. chapter1.txt)
@@ -26,5 +27,46 @@
 *Push Local git to Remote Repository* (GitHub)
 
 1)Login to Github -> Create new repository -> Select public or private -> copy <GitHubUrl>
-2) git remote add origin <GitHubUrl> : creates the remote git
-3) git push -u origin master : pushes local repository to remote one, using the '-u' option ('origin' is name of Remote, 'master' is name of Branch)
+2) Settings -> Developer settings -> Access tokens (Classic) -> Generate access token
+3) git remote add origin <GitHubUrl> : creates the remote git
+4) git branch -M main
+5) git push -u origin masin : pushes local repository to remote one, using the '-u' option ('origin' is name of Remote, 'master' is name of Branch)
+6) Enter username 
+7) Enter access token generated in (2) (note! Use classic token, NOT Fine-grained)
+
+*Exclude files in folder from going to github*
+
+1) cd <TargetFolder>
+2) touch .gitignore
+3) ls -a: show all hidden folders
+4) open .gitignore: will contain all the files that should not be loaded onto GitHub
+5) git init: create new git repo
+6) git status: see what is being tracked
+7) in .gitignore, add file names of the files in red in 'git status' to ignore
+8) git add .
+9) git commit -m "<Description>"
+
+*Remove all files from staging area*
+
+1) git rm --cached -r .
+
+*Xcode Project gitignore
+
+1) GitHub.com/github/gitignore : has templates for things to add in the .gitignore folder
+2) Find Swift.gitignore: file has prebuilt template for files not to upload to remote repo
+3) Paste contents from (2) into .gitignore (include .DS_Store at top line), and save
+4) git init : create new git
+5) git add . : adds contents in folder
+6) *Push local git to Github
+
+*Clone Github project to desktop
+
+1) cd <FolderLocation>: Find right folder
+2) git clone <url>: import project
+
+*Branching
+
+1) cd <FolderLocation>
+2) git log : check the commits made
+3( git branch <name> : starts a new branch
+ 
