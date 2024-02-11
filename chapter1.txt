@@ -1,3 +1,5 @@
+*Local Git*
+
 1) cd <FolderName>: 'Create Directory' navigates to <FolderName> (this is the working directory)
 2) mkdir <name>: 'make directory' creates a folder in cd, named <name>
 3) ls: shows contents of the folder you are in (e.g. cd <FolderName>)
@@ -21,4 +23,8 @@
 13) git checkout <FileName.type>: Restores <FileName.type> back to the last version that was committed. 
 
 
+*Push Local git to Remote Repository* (GitHub)
 
+1)Login to Github -> Create new repository -> Select public or private -> copy <GitHubUrl>
+2) git remote add origin <GitHubUrl> : creates the remote git
+3) git push -u origin master : pushes local repository to remote one, using the '-u' option ('origin' is name of Remote, 'master' is name of Branch)
